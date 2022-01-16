@@ -1,0 +1,34 @@
+ /*-------------
+      start
+      ------------ */
+      .start{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+     /* .start-detail{
+        width: 582px;
+        height: 270px;
+        margin-right: 133px;
+        margin-left: 120px;
+        margin-top: 285px;
+    }
+    .start-banner{
+        width: 440px;
+        height: 414px;        
+        margin-left: 133px;
+        margin-top: 211px;
+        border-radius: 0px;       
+    } 
+    .start-h{
+        font-weight: 700;
+        font-size: 52px;
+        margin: 0%;
+    }
+    .link{
+        display:inline-block;
+        text-decoration: none;
+        background-color:  #E02C6D;
+        border-radius: 41px;
+        padding: 10px 24px;
+        color: #FFFFFF;
+    } */
