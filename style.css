@@ -1,6 +1,25 @@
+/*------------------------------------------
+                 font
+------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* -------------------------
+common styles and utilities
+---------------------------- */
+body{
+    font-family: 'Poppins';
+    background-color: #FFFFFF;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .container{
     margin-bottom: 100px;
+    
 }
+
+
 /*-------------
       start
       ------------ */
@@ -10,20 +29,7 @@
         align-items: center;
         justify-items: center;        
     }
-     /* .start-detail{
-        width: 582px;
-        height: 270px;
-        margin-right: 133px;
-        margin-left: 120px;
-        margin-top: 285px;
-    }
-    .start-banner{
-        width: 440px;
-        height: 414px;        
-        margin-left: 133px;
-        margin-top: 211px;
-        border-radius: 0px;       
-    }  */
+
     .start-h{
         font-weight: 700;
         font-size: 52px;
@@ -36,6 +42,9 @@
         border-radius: 41px;
         padding: 10px 24px;
         color: #FFFFFF;
+    }
+    .start-banner img{
+        width: 100%;
     }
 
     /*----------------------
@@ -86,6 +95,18 @@
 .blog-img img{
     width: 100%;
 }
+.blog-info .fas{
+    padding: 0%;
+}
+
+.other{
+    color:#E02C6D;
+    text-decoration: none;
+}
+.other .fas{
+    color:#E02C6D;
+}
+
 
 /*------------------------------------- 
               Last
@@ -94,30 +115,18 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-items: center;        
+    justify-items: center;       
 }
- /* .start-detail{
-    width: 582px;
-    height: 270px;
-    margin-right: 133px;
-    margin-left: 120px;
-    margin-top: 285px;
-}
-.start-banner{
-    width: 440px;
-    height: 414px;        
-    margin-left: 133px;
-    margin-top: 211px;
-    border-radius: 0px;       
-}  */
+
 .last-h{
     font-weight: 700;
     font-size: 52px;
-    margin: 0%;
+    margin: 0%;   
 }
 .last-banner img{
     width: 100%;
 }
+
 
 /*-------------------------
  footer
@@ -126,7 +135,7 @@
 footer{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    align-items: center;
+    text-align: center;
     justify-items: center;
     background-color: black;
 }
@@ -140,10 +149,35 @@ footer p{
     color: #D9DBE1;
     text-align: center;
 }
-footer .fab, .fas{
-    
+footer .fab, .fas{    
     padding: 8px;
     color: #ffffff;
+}
+
+
+/* ------------------
+device responsible
+--------------------- */
+
+@media only screen and (max-width:688px){
+
+    .container{
+        width: 100%;}
+
+    .start, .blogs, .last{
+        grid-template-columns: repeat(1, 1fr);}
+
+    .brands{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;}
+
+    .banner img{
+        width: 100%;} 
+
+    footer{
+        width: 100%;
+        display: block;
+}
 }
 
 
